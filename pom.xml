@@ -91,18 +91,6 @@
 			<version>1.6</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.yy.ent.commons</groupId>
-			<artifactId>commons-base</artifactId>
-			<version>1.5.1</version>
-			<exclusions>
-				<exclusion>
-					<groupId>log4j</groupId>
-					<artifactId>log4j</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
 		<!-- jdbc driver -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -257,14 +245,8 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-
 		<!-- TEST end -->
-		<dependency>
-			<groupId>com.yy.ent.mobile</groupId>
-			<artifactId>mobile-message</artifactId>
-			<version>1.0.1-SNAPSHOT</version>
-		</dependency>
-
+		
 		<!-- mongodb -->
 		<dependency>
 			<groupId>org.mongodb</groupId>
@@ -382,10 +364,10 @@
 					</systemProperties>
 					<useTestClasspath>true</useTestClasspath>
 
-					<webAppConfig>
-						<contextPath>/</contextPath>
-						<defaultsDescriptor>src/test/resources/webdefault.xml</defaultsDescriptor>
-					</webAppConfig>
+<!-- 					<webAppConfig> -->
+<!-- 						<contextPath>/</contextPath> -->
+<!-- 						<defaultsDescriptor>src/test/resources/webdefault.xml</defaultsDescriptor> -->
+<!-- 					</webAppConfig> -->
 
 					<connectors>
 						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
